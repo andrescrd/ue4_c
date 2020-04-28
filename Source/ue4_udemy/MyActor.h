@@ -12,15 +12,13 @@ class UE4_UDEMY_API AMyActor : public AActor
 	GENERATED_BODY()
 	
 public:	
-	// Sets default values for this actor's properties
 	AMyActor();
 
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	UPROPERTY(EditAnywhere,BlueprintReadOnly)
+	FColor color;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	float number;
 
+	virtual void Tick(float deltaTime) override;
 };
