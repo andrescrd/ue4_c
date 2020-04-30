@@ -10,5 +10,6 @@ AMyActor::AMyActor()
 
 void AMyActor::Tick(float deltaTime)
 {
-	AddActorLocalOffset(FVector(1, 0, 0));
+	AddActorLocalOffset(velocity);
+	AddActorLocalRotation(rotation);
 }

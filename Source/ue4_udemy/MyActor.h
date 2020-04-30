@@ -10,15 +10,15 @@ UCLASS()
 class UE4_UDEMY_API AMyActor : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	AMyActor();
 
-	UPROPERTY(EditAnywhere,BlueprintReadOnly)
-	FColor color;
+	UPROPERTY(EditAnywhere)
+	FVector velocity;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-	float number;
+	UPROPERTY(EditAnywhere)
+	FRotator rotation;
 
 	virtual void Tick(float deltaTime) override;
 };
