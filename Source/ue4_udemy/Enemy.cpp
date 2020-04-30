@@ -18,5 +18,5 @@ void AEnemy::BeginPlay()
 // Called every frame
 void AEnemy::Tick(float DeltaTime)
 {
-	AddActorLocalOffset(FVector(10, 0, 0, true));
+	AddActorLocalOffset(FVector(10, 0, 0), true);
 }

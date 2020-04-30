@@ -11,8 +11,10 @@ class UE4_UDEMY_API ATramp : public AActor
 {
 	GENERATED_BODY()
 
-protected:	
-	void BeginPlay() override;
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
 	
 public:
 	UFUNCTION()
